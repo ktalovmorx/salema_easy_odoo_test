@@ -3,5 +3,4 @@ git init
 git add .
 git commit -m "SUBIDA INICIAL"
 git branch -M main
-git remote add origin https://github.com/ktalovmorx/salema_easy_odoo_test.git
 git push -u origin main
