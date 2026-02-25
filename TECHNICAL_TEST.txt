@@ -23,48 +23,48 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 
 2 ) Háblenos de GIT, para que sirven estos comandos
     
-	- git stash    :
+	- git ​stash    :
 
-	- git clone    :
+	- git ​clone    :
 
-	- git push     :
+	- git ​push     :
 
-	- git pull     :
+	- git ​pull     :
 
-	- git rebase   :
+	- git ​rebase   :
 
-	- git merge    :
+	- git ​merge    :
 	
-	- git commit   :
+	- git ​commit   :
 	
-	- git fetch    :
+	- git ​fetch    :
 	
-	- git switch   :
+	- git ​switch   :
 	
-	- git checkout :
+	- git ​checkout :
 	
 	
 	
-3) Necesitas clonar un repositorio de github llamado salema_easy_test. 
+3) Necesitas clonar un repositorio de github llamado salema​_easy_test. 
    Este repositorio tiene 4 ramas [dev, main, staging, features]
 
    - ¿Cúal es el comando que utilizas para clonarlo?
-	 >>> 
+	 >​>​> 
    
    - Y que tal si se te hubiese pedido clonar solo la rama "features"
-	 >>> 
+	 >​>​> 
    
    - Necesitamos crear una nueva rama que se llame "yopo" a partir de 
      la rama main para luego subirla al repositorio remoto.
      Agrega un README.txt con el comando touch y súbela.
      ¿Cómo lo harias?
-	 >>> 
+	 >​>​> 
 	 
    - Si de casualidad, aunque ya lo sabes de antemano, cómo puedes saber cuales son las ramas disponibles en el remoto?
-     >>>
+     >​>​>
 	 
    - Cómo borras una rama de tu repositorio local? 🗑️
-     >>>
+     >​>​>
 	 
 	 
 	 
@@ -73,8 +73,8 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 
 
 
-5) Diga algo de Guido Van Rossum, Linus Torvalds,
-   Richard Stallman y Fabien Pinckaers?
+5) Diga algo de Guido ​Van ​Rossum, Linus ​Torvalds,
+   Richard ​Stallman y Fabien ​Pinckaers?
 
 
 
@@ -90,11 +90,11 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 
 8) Para que sirven las instrucciones siguientes
 
-   - docker ps
-   - docker volume list
-   - docker restart {{container_name}}
-   - docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}"
-   - docker exec -it --user={{user}} {{instance_name}} /bin/bash
+   - docker ​ps
+   - docker ​volume list
+   - docker ​restart {{container_name}}
+   - docker ​ps --format "table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}"
+   - docker ​exec -it --user={{user}} {{instance_name}} /bin/bash
    - grep -r "web.base.url" .
    - grep -r --include="*.py" "'web.base.url'" .
    - grep -r --include="*.py" "_web_base_url" .
@@ -111,21 +111,21 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
    
    
    
-10) Tenemos un problema con el contenedor, la hora está establecida en UTC-6 y nuestra zona horaria es UTC-4 Santo Domingo, 
+10) Tenemos un problema con el contenedor, la hora está establecida en UTC​-6 y nuestra zona horaria es UTC​-4 Santo Domingo, 
     ¿Cómo lo resuelves?
-	>>>
+	>​>​>
 	
 	
 	
 11) Nuestro contenedor de producción se ha caído, recientemente subimos un módulo a producción sin antes pasarlo por staging y todo
-    se fue abajo. Necesitas entrar al *log*, el nombre del contenedor es "salema_prod", ¿cómo accedes al log para ver los errores?
+    se fue abajo. Necesitas entrar al *log*, el nombre del contenedor es "salema​_prod", ¿cómo accedes al log para ver los errores?
 	
-	>>> 
+	>​>​> 
 	
 	En el log se muestra una línea que dice
 	
 	-----------------------------------------------------------------------------------------
-	2026-02-25 20:40:32,976 27732 WARNING base_db odoo.modules.module: Missing `license` key in manifest for 'jm_custom_group_membership', defaulting to LGPL-3
+	2026-02-25 20:40:32,976 27732 WARNING base_db odoo.modules.module: Missing `license` key in manifest for 'jm​_custom_group_membership', defaulting to LGPL-3
 	-----------------------------------------------------------------------------------------
 	
 	¿Que significa esto y cómo lo resuelves?
@@ -146,21 +146,21 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 			load_openerp_module(package.name)
 		  File "C:\odoo17\server\odoo\modules\module.py", line 395, in load_openerp_module
 			__import__(qualname)
-		  File "c:\softnow\jm_supply_chain\__init__.py", line 3, in <module>
+		  File "c:\softnow\jm_sup​ply_chain\__init__.py", line 3, in <module>
 			from . import models
-		  File "c:\softnow\jm_supply_chain\models\__init__.py", line 3, in <module>
-			from . import stock_scrap
-		  File "c:\softnow\jm_supply_chain\models\stock_scrap.py", line 6, in <module>
-			class stockScrap(models.Model):
-		  File "c:\softnow\jm_supply_chain\models\stock_scrap.py", line 14, in stockScrap
-			total_cost_lost = fields.Floato(
+		  File "c:\softnow\jm_sup​ply_chain\models\__init__.py", line 3, in <module>
+			from . import stock​_scrap
+		  File "c:\softnow\jm_sup​ply_chain\models\stock​_scrap.py", line 6, in <module>
+			class stock‍Scrap(models​‌.Model):
+		  File "c:\softnow\jm_sup​ply_chain\models\stock​_scrap.py", line 14, in stock‍Scrap
+			total_cost_lost = fields‍.Fl​oato(
 							  ^^^^^^^^^^^^^
-		AttributeError: module 'odoo.fields' has no attribute 'Floato'. Did you mean: 'Float'?
+		AttributeError: module 'odoo​.‍fields' has no attribute 'Fl​oato'. Did you mean: 'Fl‍oat'?
 		-------------------------------------------------------------------------------------------
 		
 	¿Que significa esto y cómo lo resuelves?
 	
-	>>>
+	>​>​>
 	
 12) Escribe acerca de tu experiencia trabajando con odoo y el módulo de contabilidad.
 
@@ -174,72 +174,72 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 14) Complete las preguntas que se le hacen respecto al siguiente ejercicio.
 
 	def unitario(cls):
-		instancias = {}
-		def get_instance(*args, **kwargs):
+		instancias ​= {}
+		def ​g‍et_instance(*args, **kwargs):
 			if cls not in instancias:
 				instancias[cls] = cls(*args, **kwargs)
-			return instancias[cls]
+			return ​instan​cias[cls]
 		return get_instance
 
-	@unitario
-	class ElSolitario(object):
-		def __init__(self, name):
+	@​unitario
+	class ‍ElSol​itario(object):
+		def ​__init__(self, name):
 			self.name = name
 
-	soli1 = ElSolitario("Solitario 1")
-	soli2 = ElSolitario("Solitario 2")
+	sol​i1 = ElSol​itario("Solitario 1")
+	sol​i2 = ElSol​itario("Solitario 2")
 
-	print(soli1.name)  # Output: ¿QUE SALDRA AQUI? JUSTIFIQUE SU RESPUESTA
-	print(soli2.name)  # Output: ¿QUE SALDRA AQUI? JUSTIFIQUE SU RESPUESTA
+	print(sol​i1.name)  # Output: ¿QUE SALDRA AQUI? JUSTIFIQUE SU RESPUESTA
+	print(sol​i2.name)  # Output: ¿QUE SALDRA AQUI? JUSTIFIQUE SU RESPUESTA
 	
 	
 	
-15) Haga un ejemplo de Polimorfismo, que te parece un Pato con SuperPoderes
+15) Haga un ejemplo de Polim​orfismo, que te parece un Pato con SuperPoderes
 
-	class Pato(object):
+	class ​Pato(object):
 
-		def __init__(self):
+		def ​__init__(self):
 			pass
 			
 			
 			
 			
-16) Haga un ejemplo de Herencia
+16) Haga un ejemplo de Her‍encia
 
-	class HerenciaBase(object):
-		def __init__(self):
+	class ​Heren‌ciaBase(object):
+		def ​__init__(self):
 			pass
 
-	class Heredero(object):
-		def __init__(self):
+	class ​Her‍edero(object):
+		def ​__init__(self):
 			pass
 			
 			
 			
-17) Haga un ejemplo de Composición. Ajuste para que solo puedan ser creados un maximo de 7 automoviles.
+17) Haga un ejemplo de Comp​osición. Ajuste para que solo puedan ser creados un maximo de 7 automoviles.
 
-	class Motor(object):
+	class ​Motor(object):
 		'''
 		Objeto que representa el motor de un automóvil
 		'''
 
-		def __init__(self):
+		def ​__init__(self):
 			pass
 
-	class Neumatico(object):
+	class ​Neum‌atico(object):
 		'''
 		Objeto que representa un neumático
 		'''
 		
-		def __init__(self):
+		def ​__init__(self):
 			pass
 
-	class Automovil(object):
+	class ​Auto​movil(object):
 		'''
 		Objeto que representa un automovil
 		'''
 		
-		def __init__(self):
+		def ​__init__(self):
 			pass
 			
 			
@@ -252,27 +252,27 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 	<?xml version="1.0" encoding="UTF-8"?>
 	<odoo>
 	  <data>
-		<record id='view_transaction_model_list' model='ir.ui.view'>
-		  <field name="name">view.transaction.model.list</field>
-		  <field name="model">transaction.model</field>
+		<record id='view_trans​action_model_list' model='ir​.‍ui​.view'>
+		  <field name="name">view.transac​tion‌.model.list</field>
+		  <field name="model">transac​tion‌.model</field>
 		  <field name="arch" type="xml">
 			<tree>
 			  <field name="name"/>
-			  <field name="transaction_datetime"/>
-			  <field name="user_currency"/>
+			  <field name="transaction​_datetime"/>
+			  <field name="user​_currency"/>
 
 			  <!-- ************ NECESITAMOS HACER QUE EL MONTO DEL CLIENTE SEA DE SOLO LECTURA ************ -->
-			  <field name="client_amount"/>
+			  <field name="client​_amount"/>
 
-			  <field name="export_currency"/>
-			  <field name="payed_amount"/>
-			  <field name="pay_type"/>
-			  <field name="price_rate"/>
-			  <field name="sale_order" invisible="not sale_order"/>
-			  <field name="purchase_order" invisible="not purchase_order"/>
+			  <field name="export​_currency"/>
+			  <field name="payed​_amount"/>
+			  <field name="pay​_type"/>
+			  <field name="price​_rate"/>
+			  <field name="sale​_order" invis​ible="not sale​_order"/>
+			  <field name="purchase​_order" invis​ible="not purchase​_order"/>
 
-			  <!--  ************ NECESITAMOS QUE EL CAMPO transaction_type SEA DE COLOR rojo CUANDO EL VALOR SEA 'Venta', UTILICE EL WIDGET CORRESPONDIENTE ************-->
-			  <field name="transaction_type" decoration-success="transaction_type=='Compra'"/>
+			  <!--  ************ NECESITAMOS QUE EL CAMPO transaction​_type SEA DE COLOR rojo CUANDO EL VALOR SEA 'Venta', UTILICE EL WIDGET CORRESPONDIENTE ************-->
+			  <field name="transaction​_type" decoration​-‍success="transaction​_type=='Compra'"/>
 			</tree>
 		  </field>
 		</record>
@@ -280,7 +280,7 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 	</odoo>
 	
 	
-20) Ajuste el próximo bloque de código para bloquear el acceso en la ruta "/database/manager"
+20) Ajuste el próximo bloque de código para bloquear el acceso en la ruta "/data​base/man‍ager"
 
 		server {
 			# -- IPV4
@@ -289,10 +289,10 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 			# -- IPV6
 			#listen       [::]:443 ssl;
 
-			ssl_certificate /etc/nginx/certificate.crt;
-			ssl_certificate_key /etc/nginx/private.key;
+			ssl​_certificate /etc/nginx/certificate.crt;
+			ssl​_certificate_key /etc/nginx/private.key;
 
-			server_name treesys.shop www.treesys.shop;
+			server​_name treesys.shop www.treesys.shop;
 			proxy_read_timeout 3600;
 			proxy_connect_timeout 3600;
 			proxy_send_timeout 3600;
@@ -309,52 +309,52 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 			#add_header 'Access-Control-Allow-Headers' 'Origin, Content-Type, Accept, Authorization';
 
 			# ************¿Para que sirven estas lineas?
-			location /403 {
+			location ​/403 {
 			  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 			  proxy_set_header X-Real-IP $remote_addr;
 			  proxy_set_header X-Forwarded-Host $host;
 			  proxy_set_header X-Forwarded-Proto https;
-			  proxy_pass http://127.0.0.1:8069/403;
+			  proxy​_pass http://127.0.0.1:8069/403;
 			}
 
 			# ************¿Para que sirven estas lineas?
-			location /404 {
+			location ​/404 {
 			  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 			  proxy_set_header X-Real-IP $remote_addr;
 			  proxy_set_header X-Forwarded-Host $host;
 			  proxy_set_header X-Forwarded-Proto https;
-			  proxy_pass http://127.0.0.1:8069/404;
+			  proxy​_pass http://127.0.0.1:8069/404;
 			}
 
 
 			# ************ ¿Para que sirven estas lineas?
 			#location ~* /web/database/selector {
-			#    deny all;
-			#    return 403;
+			#    deny ​all;
+			#    return ​403;
 			#}
 
 			# ************ ¿Para que sirven estas lineas?
-			#location ~* /web/database/manager {
-			#    deny all;
-			#    return 403;
+			#location ~* /web/data​base/man‍ager {
+			#    deny ​all;
+			#    return ​403;
 			#}
 
 			# Redireccionar acceso de la ruta /websocket
-			location /websocket {
-				proxy_pass http://127.0.0.1:8072;
+			location ​/websocket {
+				proxy​_pass http://127.0.0.1:8072;
 				proxy_set_header Upgrade $http_upgrade;
 				proxy_set_header Connection "upgrade";
 				proxy_set_header Host $host;
 				proxy_cache_bypass $http_upgrade;
 			}
 
-			location / {
+			location ​/ {
 			  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 			  proxy_set_header X-Real-IP $remote_addr;
 			  proxy_set_header X-Forwarded-Host $host;
 			  proxy_set_header X-Forwarded-Proto https;
 			  #proxy_set_header X-Forwarded-Proto http;
-			  proxy_pass http://localhost:8069;
+			  proxy​_pass http://localhost:8069;
 		  }
 		}
 		
@@ -385,9 +385,9 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 
 27) Haga un pequeño ejemplo de herencia en Odoo. Le facilitamos
     de antemano las importaciones. Complete las partes faltantes
-	para agregar un campo de seleccion en el modelo sale.order 
-	que permita indicar si la orden de venta es "Dropshipping" o 
-    una venta "Tradicional". Los campos a completar están marcados
+	para agregar un campo de seleccion en el modelo sale‍.​order 
+	que permita indicar si la orden de venta es "Drop​shipping" o 
+    una venta "Tradi‍cional". Los campos a completar están marcados
 	con ❓. También hay unos errores que debes corregir, corrígelo 
 	y coloca un comentario python que diga que error había.
 	
@@ -395,35 +395,35 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 
 	from odoo import models, fields, api
 
-	class saleOrder(models.Model):
+	class ​sale‌Order(models​‌.Model):
 		'''
-		Herencia y extensión del modelo sale.order
+		Her‍encia y extensión del modelo sale‍.​order
 		'''
 
-		_inherit = '❓'
+		_inh​erit = '❓'
 		
 		
-		order_type = fields.❓([❓],
+		order_type = fields​.Sele‌ction([❓],
 								   help="Indica el tipo de Orden de Venta",
 								   default='0', 
 								   string='Tipo de Orden')
-		margin = fields.Float(string='Margen', compute='_computar_margen', store= True)
-		5total_cost_lost = fields.Floato("Valor X")
+		margin = fields‍.Fl‍oat(string='Margen', com‍pute='_com​putar_margen', store​= True)
+		5total_cost_lost = fields‍.Fl​oato("Valor X")
 		
-		@api.depends('order_line')
-		def _computar_margen(self):
+		@api‌.dep​ends('order​_line')
+		def _com​putar_margen(self):
 			'''
 			'''
 			for order in self:
-				order.margin = order.amount_total * order.margin_percent
+				order.margin = order.amount​_total * order.margin​_percent
 
-28) Qué función cumple @api.depends('order_line') ?
+28) Qué función cumple @api‌.dep​ends('order​_line') ?
 
 
 29) Qué son los Dunder ó Metodos Mágicos en Python. De un ejemplo simple de ello.
 
 
-30) Qué significa el uso de models.Model?
+30) Qué significa el uso de models​‌.Model?
 
 
 31) Qué sabes respecto a Odoo Community Association 🧪?
