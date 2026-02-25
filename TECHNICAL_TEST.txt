@@ -101,9 +101,9 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
    
    
    
-9) ¿En qué ruta dentro del contenedor se instala Python. Indique con una X en el área [.] la opción correcta?
+9) ¿En qué ruta dentro del contenedor habita el ejecutable del interprete de Python. Indique con una X en el área [.] la opción correcta?
 
-   a) /usr/lib/python3/dist-packages                        [.]
+   a) /usr/lib/python3                                      [.]
    b) /home/python3                                         [.]
    c) /usr/lib/                                             [.]
    d) /root                                                 [.]
