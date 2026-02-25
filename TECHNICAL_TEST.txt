@@ -2,15 +2,22 @@
 Prueba Técnica Integral: Desarrollador Odoo, API y DevOps.
 ----------------------------------------------------------
 
-Introducción
+@@@@@  @@@@@@@   @       @@@@@@  @        @  @@@@@@@
+@      @     @   @       @       @ @     @@  @     @
+@      @     @   @       @       @  @   @ @  @     @
+@@@@@  @     @   @       @@@@    @   @ @  @  @     @
+    @  @     @   @       @       @    @   @  @     @
+	@  @     @@  @       @       @        @  @     @@
+@@@@@  @@@@@@@ @ @@@@@@@ @@@@@@  @        @  @@@@@@@ @
 
 
-    ¡Hola!, Hemos preparado este desafío técnico no solo para ver tus habilidades, sino
+    ⚡¡Hola!, Hemos preparado este desafío técnico no solo para ver tus habilidades, sino
 para tener una idea de cómo piensas y resuelves problemas. La idea es confirmar tus habilidades
 teóricas y prácticas en el uso de los lenguajes que se utilizan en el desarrollo de módulos 
-en Odoo. Más que un examen, míralo como un proyecto en el que queremos ver tu habilidad.
+en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que queremos ver tu habilidad.
 
-1 ) Comente acerca de su experiencia en el manejo de máquinas virtuales.
+
+1 ) 🎯 Comente acerca de su experiencia en el manejo de máquinas virtuales.
 
 
 
@@ -38,7 +45,7 @@ en Odoo. Más que un examen, míralo como un proyecto en el que queremos ver tu 
 	
 	
 	
-3) Hablemos de GIT, supongamos que necesitas clonar un repositorio de github llamado salema_easy_test. 
+3) Necesitas clonar un repositorio de github llamado salema_easy_test. 
    Este repositorio tiene 4 ramas [dev, main, staging, features]
 
    - ¿Cúal es el comando que utilizas para clonarlo?
@@ -47,23 +54,27 @@ en Odoo. Más que un examen, míralo como un proyecto en el que queremos ver tu 
    - Y que tal si se te hubiese pedido clonar solo la rama "features"
 	 >>> 
    
-   - Necesitamos crear una nueva rama y luego subirla al repositorio remoto.¿Qué haces?
+   - Necesitamos crear una nueva rama que se llame "yopo" a partir de 
+     la rama main para luego subirla al repositorio remoto.
+     Agrega un README.txt con el comando touch y súbela.
+     ¿Cómo lo harias?
 	 >>> 
 	 
    - Si de casualidad, aunque ya lo sabes de antemano, cómo puedes saber cuales son las ramas disponibles en el remoto?
      >>>
 	 
-   - Como borras una rama de tu repositorio local
+   - Cómo borras una rama de tu repositorio local? 🗑️
      >>>
 	 
 	 
 	 
-4) Qué opinión tienes respecto al uso de GIT?
+4) Qué opinión tienes respecto al uso de GIT en proyectos personales y empresariales?
 
 
 
 
-5) Quién es Guido Van Rossum?
+5) Diga algo de Guido Van Rossum, Linus Torvalds,
+   Richard Stallman y Fabien Pinckaers?
 
 
 
@@ -156,7 +167,6 @@ en Odoo. Más que un examen, míralo como un proyecto en el que queremos ver tu 
 
 
 13) Completa la prueba y sube al repositorio que creaste una captura de pantalla de tus resultados.
-    
 	https://www.w3schools.com/quiztest/quiztest.asp?qtest=PYTHON
 	
 	
@@ -361,25 +371,68 @@ en Odoo. Más que un examen, míralo como un proyecto en el que queremos ver tu 
 
 
 
-24) Sabes preparar un cable de red?
+24) Sabes preparar un cable UTP 🔌?
 
 
 
-25) Haz manejado protocolos HTTP, HTTPS, FTP, TELNET ?
+25) Haz manejado protocolos HTTP, HTTPS, FTP, TELNET 🔀?
 
 
 
 26) Cómo ha sido tu experiencia con estos protocolos?
 
 
-27) Eso es todo, que opinas de esta prueba?
 
-
-@@@@@  @@@@@@@   @       @@@@@@  @        @  @@@@@@@
-@      @     @   @       @       @ @     @@  @     @
-@      @     @   @       @       @  @   @ @  @     @
-@@@@@  @     @   @       @@@@    @   @ @  @  @     @
-    @  @     @   @       @       @    @   @  @     @
-	@  @     @@  @       @       @        @  @     @@
-@@@@@  @@@@@@@ @ @@@@@@@ @@@@@@  @        @  @@@@@@@ @
+27) Haga un pequeño ejemplo de herencia en Odoo. Le facilitamos
+    de antemano las importaciones. Complete las partes faltantes
+	para agregar un campo de seleccion en el modelo sale.order 
+	que permita indicar si la orden de venta es "Dropshipping" o 
+    una venta "Tradicional". Los campos a completar están marcados
+	con ❓. También hay unos errores que debes corregir, corrígelo 
+	y coloca un comentario python que diga que error había.
 	
+	# -*- coding: utf-8 -*-
+
+	from odoo import models, fields, api
+
+	class saleOrder(models.Model):
+		'''
+		Herencia y extensión del modelo sale.order
+		'''
+
+		_inherit = '❓'
+		
+		
+		order_type = fields.❓([❓],
+								   help="Indica el tipo de Orden de Venta",
+								   default='0', 
+								   string='Tipo de Orden')
+		margin = fields.Float(string='Margen', compute='_computar_margen', store= True)
+		5total_cost_lost = fields.Floato("Valor X")
+		
+		@api.depends('order_line')
+		def _computar_margen(self):
+			'''
+			'''
+			for order in self:
+				order.margin = order.amount_total * order.margin_percent
+
+28) Qué función cumple @api.depends('order_line') ?
+
+
+29) Qué son los Dunder ó Metodos Mágicos en Python. De un ejemplo simple de ello.
+
+
+30) Qué significa el uso de models.Model?
+
+
+31) Qué sabes respecto a Odoo Community Association 🧪?
+    https://github.com/oca
+
+
+
+32) Qué es el IDLE de python?
+
+
+
+HASTA AQUI, ES TODO.
