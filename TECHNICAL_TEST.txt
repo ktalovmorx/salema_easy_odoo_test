@@ -1,0 +1,385 @@
+----------------------------------------------------------
+Prueba Técnica Integral: Desarrollador Odoo, API y DevOps.
+----------------------------------------------------------
+
+Introducción
+
+
+    ¡Hola!, Hemos preparado este desafío técnico no solo para ver tus habilidades, sino
+para tener una idea de cómo piensas y resuelves problemas. La idea es confirmar tus habilidades
+teóricas y prácticas en el uso de los lenguajes que se utilizan en el desarrollo de módulos 
+en Odoo. Más que un examen, míralo como un proyecto en el que queremos ver tu habilidad.
+
+1 ) Comente acerca de su experiencia en el manejo de máquinas virtuales.
+
+
+
+2 ) Háblenos de GIT, para que sirven estos comandos
+    
+	- git stash    :
+
+	- git clone    :
+
+	- git push     :
+
+	- git pull     :
+
+	- git rebase   :
+
+	- git merge    :
+	
+	- git commit   :
+	
+	- git fetch    :
+	
+	- git switch   :
+	
+	- git checkout :
+	
+	
+	
+3) Hablemos de GIT, supongamos que necesitas clonar un repositorio de github llamado salema_easy_test. 
+   Este repositorio tiene 4 ramas [dev, main, staging, features]
+
+   - ¿Cúal es el comando que utilizas para clonarlo?
+	 >>> 
+   
+   - Y que tal si se te hubiese pedido clonar solo la rama "features"
+	 >>> 
+   
+   - Necesitamos crear una nueva rama y luego subirla al repositorio remoto.¿Qué haces?
+	 >>> 
+	 
+   - Si de casualidad, aunque ya lo sabes de antemano, cómo puedes saber cuales son las ramas disponibles en el remoto?
+     >>>
+	 
+   - Como borras una rama de tu repositorio local
+     >>>
+	 
+	 
+	 
+4) Qué opinión tienes respecto al uso de GIT?
+
+
+
+
+5) Quién es Guido Van Rossum?
+
+
+
+6) Crea un repositorio en GIT, sube algunos ejemplos que demuestren tu destreza en odoo y compárte el enlace con:
+    jomorales.ventura@gmail.com 
+    https://github.com/ktalovmorx
+	
+	
+	
+7) Qué experiencia tienes utilizando Docker y Docker Compose.
+
+
+
+8) Para que sirven las instrucciones siguientes
+
+   - docker ps
+   - docker volume list
+   - docker restart {{container_name}}
+   - docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}"
+   - docker exec -it --user={{user}} {{instance_name}} /bin/bash
+   - grep -r "web.base.url" .
+   - grep -r --include="*.py" "'web.base.url'" .
+   - grep -r --include="*.py" "_web_base_url" .
+   
+   
+   
+9) ¿En qué ruta dentro del contenedor se instala Python. Indique con una X en el área [.] la opción correcta?
+
+   a) /usr/lib/python3/dist-packages                        [.]
+   b) /home/python3                                         [.]
+   c) /usr/lib/                                             [.]
+   d) /root                                                 [.]
+   e) Ninguna de las anteriores se instala en ____________  [.]
+   
+   
+   
+10) Tenemos un problema con el contenedor, la hora está establecida en UTC-6 y nuestra zona horaria es UTC-4 Santo Domingo, 
+    ¿Cómo lo resuelves?
+	>>>
+	
+	
+	
+11) Nuestro contenedor de producción se ha caído, recientemente subimos un módulo a producción sin antes pasarlo por staging y todo
+    se fue abajo. Necesitas entrar al *log*, el nombre del contenedor es "salema_prod", ¿cómo accedes al log para ver los errores?
+	
+	>>> 
+	
+	En el log se muestra una línea que dice
+	
+	-----------------------------------------------------------------------------------------
+	2026-02-25 20:40:32,976 27732 WARNING base_db odoo.modules.module: Missing `license` key in manifest for 'jm_custom_group_membership', defaulting to LGPL-3
+	-----------------------------------------------------------------------------------------
+	
+	¿Que significa esto y cómo lo resuelves?
+	
+	También vemos otras líneas que dicen
+	
+		-----------------------------------------------------------------------------------------
+		Traceback (most recent call last):
+		  File "C:\odoo17\server\odoo\modules\registry.py", line 110, in new
+			odoo.modules.load_modules(registry, force_demo, status, update_module)
+		  File "C:\odoo17\server\odoo\modules\loading.py", line 481, in load_modules
+			processed_modules += load_marked_modules(env, graph,
+								 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+		  File "C:\odoo17\server\odoo\modules\loading.py", line 366, in load_marked_modules
+			loaded, processed = load_module_graph(
+								^^^^^^^^^^^^^^^^^^
+		  File "C:\odoo17\server\odoo\modules\loading.py", line 187, in load_module_graph
+			load_openerp_module(package.name)
+		  File "C:\odoo17\server\odoo\modules\module.py", line 395, in load_openerp_module
+			__import__(qualname)
+		  File "c:\softnow\jm_supply_chain\__init__.py", line 3, in <module>
+			from . import models
+		  File "c:\softnow\jm_supply_chain\models\__init__.py", line 3, in <module>
+			from . import stock_scrap
+		  File "c:\softnow\jm_supply_chain\models\stock_scrap.py", line 6, in <module>
+			class stockScrap(models.Model):
+		  File "c:\softnow\jm_supply_chain\models\stock_scrap.py", line 14, in stockScrap
+			total_cost_lost = fields.Floato(
+							  ^^^^^^^^^^^^^
+		AttributeError: module 'odoo.fields' has no attribute 'Floato'. Did you mean: 'Float'?
+		-------------------------------------------------------------------------------------------
+		
+	¿Que significa esto y cómo lo resuelves?
+	
+	>>>
+	
+12) Escribe acerca de tu experiencia trabajando con odoo y el módulo de contabilidad.
+
+
+
+13) Completa la prueba y sube al repositorio que creaste una captura de pantalla de tus resultados.
+    
+	https://www.w3schools.com/quiztest/quiztest.asp?qtest=PYTHON
+	
+	
+	
+14) Complete las preguntas que se le hacen respecto al siguiente ejercicio.
+
+	def unitario(cls):
+		instancias = {}
+		def get_instance(*args, **kwargs):
+			if cls not in instancias:
+				instancias[cls] = cls(*args, **kwargs)
+			return instancias[cls]
+		return get_instance
+
+	@unitario
+	class ElSolitario(object):
+		def __init__(self, name):
+			self.name = name
+
+	soli1 = ElSolitario("Solitario 1")
+	soli2 = ElSolitario("Solitario 2")
+
+	print(soli1.name)  # Output: ¿QUE SALDRA AQUI? JUSTIFIQUE SU RESPUESTA
+	print(soli2.name)  # Output: ¿QUE SALDRA AQUI? JUSTIFIQUE SU RESPUESTA
+	
+	
+	
+15) Haga un ejemplo de Polimorfismo, que te parece un Pato con SuperPoderes
+
+	class Pato(object):
+
+		def __init__(self):
+			pass
+			
+			
+			
+			
+16) Haga un ejemplo de Herencia
+
+	class HerenciaBase(object):
+		def __init__(self):
+			pass
+
+	class Heredero(object):
+		def __init__(self):
+			pass
+			
+			
+			
+17) Haga un ejemplo de Composición. Ajuste para que solo puedan ser creados un maximo de 7 automoviles.
+
+	class Motor(object):
+		'''
+		Objeto que representa el motor de un automóvil
+		'''
+
+		def __init__(self):
+			pass
+
+	class Neumatico(object):
+		'''
+		Objeto que representa un neumático
+		'''
+		
+		def __init__(self):
+			pass
+
+	class Automovil(object):
+		'''
+		Objeto que representa un automovil
+		'''
+		
+		def __init__(self):
+			pass
+			
+			
+18) Con cual versión de odoo estás más familiarizado?
+
+
+
+19) A continuacion mostramos ejemplos de una vista tree y una vista form.
+
+	<?xml version="1.0" encoding="UTF-8"?>
+	<odoo>
+	  <data>
+		<record id='view_transaction_model_list' model='ir.ui.view'>
+		  <field name="name">view.transaction.model.list</field>
+		  <field name="model">transaction.model</field>
+		  <field name="arch" type="xml">
+			<tree>
+			  <field name="name"/>
+			  <field name="transaction_datetime"/>
+			  <field name="user_currency"/>
+
+			  <!-- ************ NECESITAMOS HACER QUE EL MONTO DEL CLIENTE SEA DE SOLO LECTURA ************ -->
+			  <field name="client_amount"/>
+
+			  <field name="export_currency"/>
+			  <field name="payed_amount"/>
+			  <field name="pay_type"/>
+			  <field name="price_rate"/>
+			  <field name="sale_order" invisible="not sale_order"/>
+			  <field name="purchase_order" invisible="not purchase_order"/>
+
+			  <!--  ************ NECESITAMOS QUE EL CAMPO transaction_type SEA DE COLOR rojo CUANDO EL VALOR SEA 'Venta', UTILICE EL WIDGET CORRESPONDIENTE ************-->
+			  <field name="transaction_type" decoration-success="transaction_type=='Compra'"/>
+			</tree>
+		  </field>
+		</record>
+	  </data>
+	</odoo>
+	
+	
+20) Ajuste el próximo bloque de código para bloquear el acceso en la ruta "/database/manager"
+
+		server {
+			# -- IPV4
+			#listen       80;
+			listen       443 ssl;
+			# -- IPV6
+			#listen       [::]:443 ssl;
+
+			ssl_certificate /etc/nginx/certificate.crt;
+			ssl_certificate_key /etc/nginx/private.key;
+
+			server_name treesys.shop www.treesys.shop;
+			proxy_read_timeout 3600;
+			proxy_connect_timeout 3600;
+			proxy_send_timeout 3600;
+			client_max_body_size 500M;
+
+			access_log  /var/log/nginx/odoo.access.log;
+			error_log   /var/log/nginx/odoo.error.log;
+			error_page 403 /403;
+			error_page 404 /404;
+			
+			# Cabeceras CORS
+			#add_header 'Access-Control-Allow-Origin' '*';
+			#add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS, PUT, DELETE';
+			#add_header 'Access-Control-Allow-Headers' 'Origin, Content-Type, Accept, Authorization';
+
+			# ************¿Para que sirven estas lineas?
+			location /403 {
+			  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+			  proxy_set_header X-Real-IP $remote_addr;
+			  proxy_set_header X-Forwarded-Host $host;
+			  proxy_set_header X-Forwarded-Proto https;
+			  proxy_pass http://127.0.0.1:8069/403;
+			}
+
+			# ************¿Para que sirven estas lineas?
+			location /404 {
+			  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+			  proxy_set_header X-Real-IP $remote_addr;
+			  proxy_set_header X-Forwarded-Host $host;
+			  proxy_set_header X-Forwarded-Proto https;
+			  proxy_pass http://127.0.0.1:8069/404;
+			}
+
+
+			# ************ ¿Para que sirven estas lineas?
+			#location ~* /web/database/selector {
+			#    deny all;
+			#    return 403;
+			#}
+
+			# ************ ¿Para que sirven estas lineas?
+			#location ~* /web/database/manager {
+			#    deny all;
+			#    return 403;
+			#}
+
+			# Redireccionar acceso de la ruta /websocket
+			location /websocket {
+				proxy_pass http://127.0.0.1:8072;
+				proxy_set_header Upgrade $http_upgrade;
+				proxy_set_header Connection "upgrade";
+				proxy_set_header Host $host;
+				proxy_cache_bypass $http_upgrade;
+			}
+
+			location / {
+			  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+			  proxy_set_header X-Real-IP $remote_addr;
+			  proxy_set_header X-Forwarded-Host $host;
+			  proxy_set_header X-Forwarded-Proto https;
+			  #proxy_set_header X-Forwarded-Proto http;
+			  proxy_pass http://localhost:8069;
+		  }
+		}
+		
+
+21) Cómo ha sido su experiencia con los modelos y vistas QWEB en el módulo de punto de ventas de odoo?
+
+
+
+22) Qué dificultades encuentras al momento de desarrollar vistas para el módulo de punto de ventas?
+
+
+
+23) Qué experiencia tienes en el área de Tecnología de Información?
+
+
+
+24) Sabes preparar un cable de red?
+
+
+
+25) Haz manejado protocolos HTTP, HTTPS, FTP, TELNET ?
+
+
+
+26) Cómo ha sido tu experiencia con estos protocolos?
+
+
+27) Eso es todo, que opinas de esta prueba?
+
+
+@@@@@  @@@@@@@   @       @@@@@@  @        @  @@@@@@@
+@      @     @   @       @       @ @     @@  @     @
+@      @     @   @       @       @  @   @ @  @     @
+@@@@@  @     @   @       @@@@    @   @ @  @  @     @
+    @  @     @   @       @       @    @   @  @     @
+	@  @     @@  @       @       @        @  @     @@
+@@@@@  @@@@@@@ @ @@@@@@@ @@@@@@  @        @  @@@@@@@ @
+	
