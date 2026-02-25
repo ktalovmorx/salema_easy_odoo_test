@@ -19,29 +19,29 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 
 1 ) 🎯 Comente acerca de su experiencia en el manejo de máquinas virtuales.
 
-
+	❓
 
 2 ) Háblenos de GIT, para que sirven estos comandos
     
-	- git ​stash    :
+	- git ​stash    : ❓ ❓
 
-	- git ​clone    :
+	- git ​clone    : ❓
 
-	- git ​push     :
+	- git ​push     : ❓
 
-	- git ​pull     :
+	- git ​pull     : ❓
 
-	- git ​rebase   :
+	- git ​rebase   : ❓
 
-	- git ​merge    :
+	- git ​merge    : ❓
 	
-	- git ​commit   :
+	- git ​commit   : ❓
 	
-	- git ​fetch    :
+	- git ​fetch    : ❓
 	
-	- git ​switch   :
+	- git ​switch   : ❓
 	
-	- git ​checkout :
+	- git ​checkout : ❓
 	
 	
 	
@@ -49,78 +49,85 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
    Este repositorio tiene 4 ramas [dev, main, staging, features]
 
    - ¿Cúal es el comando que utilizas para clonarlo?
-	 >​>​> 
+	 >​>​> ❓
    
    - Y que tal si se te hubiese pedido clonar solo la rama "features"
-	 >​>​> 
+	 >​>​> ❓
    
    - Necesitamos crear una nueva rama que se llame "yopo" a partir de 
      la rama main para luego subirla al repositorio remoto.
      Agrega un README.txt con el comando touch y súbela.
      ¿Cómo lo harias?
-	 >​>​> 
+	 >​>​> ❓
 	 
    - Si de casualidad, aunque ya lo sabes de antemano, cómo puedes saber cuales son las ramas disponibles en el remoto?
-     >​>​>
+     >​>​> ❓
 	 
    - Cómo borras una rama de tu repositorio local? 🗑️
-     >​>​>
+     >​>​> ❓
 	 
 	 
 	 
 4) Qué opinión tienes respecto al uso de GIT en proyectos personales y empresariales?
 
-
+	❓
 
 
 5) Diga algo de Guido ​Van ​Rossum, Linus ​Torvalds,
    Richard ​Stallman y Fabien ​Pinckaers?
 
-
+	❓
 
 6) Crea un repositorio en GIT, sube algunos ejemplos que demuestren tu destreza en odoo y compárte el enlace con:
     jomorales.ventura@gmail.com 
     https://github.com/ktalovmorx
 	
-	
+	❓
 	
 7) Qué experiencia tienes utilizando Docker y Docker Compose.
 
+	❓
 
+8) Para que sirven o que hacen las instrucciones siguientes
 
-8) Para que sirven las instrucciones siguientes
-
-   - docker ​ps
-   - docker ​volume list
-   - docker ​restart {{container_name}}
-   - docker ​ps --format "table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}"
-   - docker ​exec -it --user={{user}} {{instance_name}} /bin/bash
-   - grep -r "web.base.url" .
-   - grep -r --include="*.py" "'web.base.url'" .
-   - grep -r --include="*.py" "_web_base_url" .
+   - docker ​ps ❓
+   
+   - docker ​volume list ❓
+   
+   - docker ​restart {{container_name}} ❓
+   
+   - docker ​ps --format "table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}" ❓
+   
+   - docker ​exec -it --user={{user}} {{instance_name}} /bin/bash ❓
+   
+   - grep -r "web.base.url" . ❓
+   
+   - grep -r --include="*.py" "'web.base.url'" . ❓
+   
+   - grep -r --include="*.py" "_web_base_url" . ❓
    
    
    
 9) ¿En qué ruta dentro del contenedor habita el ejecutable del interprete de Python. Indique con una X en el área [.] la opción correcta?
 
-   a) /usr/lib/python3                                      [.]
-   b) /home/python3                                         [.]
-   c) /usr/lib/                                             [.]
-   d) /root                                                 [.]
-   e) Ninguna de las anteriores se instala en ____________  [.]
+   a) /usr/lib/python3                                      [.]❓
+   b) /home/python3                                         [.]❓
+   c) /usr/lib/                                             [.]❓
+   d) /root                                                 [.]❓❓
+   e) Ninguna de las anteriores se instala en ____________  [.]❓
    
    
    
 10) Tenemos un problema con el contenedor, la hora está establecida en UTC​-6 y nuestra zona horaria es UTC​-4 Santo Domingo, 
     ¿Cómo lo resuelves?
-	>​>​>
+	>​>​> ❓
 	
 	
 	
 11) Nuestro contenedor de producción se ha caído, recientemente subimos un módulo a producción sin antes pasarlo por staging y todo
     se fue abajo. Necesitas entrar al *log*, el nombre del contenedor es "salema​_prod", ¿cómo accedes al log para ver los errores?
 	
-	>​>​> 
+	>​>​> ❓
 	
 	En el log se muestra una línea que dice
 	
@@ -129,6 +136,7 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 	-----------------------------------------------------------------------------------------
 	
 	¿Que significa esto y cómo lo resuelves?
+	❓
 	
 	También vemos otras líneas que dicen
 	
@@ -160,16 +168,16 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 		
 	¿Que significa esto y cómo lo resuelves?
 	
-	>​>​>
+	>​>​> ❓
 	
 12) Escribe acerca de tu experiencia trabajando con odoo y el módulo de contabilidad.
 
-
+	❓
 
 13) Completa la prueba y sube al repositorio que creaste una captura de pantalla de tus resultados.
 	https://www.w3schools.com/quiztest/quiztest.asp?qtest=PYTHON
 	
-	
+	❓
 	
 14) Complete las preguntas que se le hacen respecto al siguiente ejercicio.
 
@@ -189,8 +197,8 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 	sol​i1 = ElSol​itario("Solitario 1")
 	sol​i2 = ElSol​itario("Solitario 2")
 
-	print(sol​i1.name)  # Output: ¿QUE SALDRA AQUI? JUSTIFIQUE SU RESPUESTA
-	print(sol​i2.name)  # Output: ¿QUE SALDRA AQUI? JUSTIFIQUE SU RESPUESTA
+	print(sol​i1.name)  # ❓ QUE SALDRA AQUI ❓ 
+	print(sol​i2.name)  # ❓ QUE SALDRA AQUI ❓
 	
 	
 	
@@ -245,7 +253,7 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 			
 18) Con cual versión de odoo estás más familiarizado?
 
-
+	❓
 
 19) A continuacion mostramos ejemplos de una vista tree y una vista form.
 
@@ -261,7 +269,7 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 			  <field name="transaction​_datetime"/>
 			  <field name="user​_currency"/>
 
-			  <!-- ************ NECESITAMOS HACER QUE EL MONTO DEL CLIENTE SEA DE SOLO LECTURA ************ -->
+			  ❓<!-- ************ NECESITAMOS HACER QUE EL MONTO DEL CLIENTE SEA DE SOLO LECTURA ************ -->
 			  <field name="client​_amount"/>
 
 			  <field name="export​_currency"/>
@@ -271,7 +279,7 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 			  <field name="sale​_order" invis​ible="not sale​_order"/>
 			  <field name="purchase​_order" invis​ible="not purchase​_order"/>
 
-			  <!--  ************ NECESITAMOS QUE EL CAMPO transaction​_type SEA DE COLOR rojo CUANDO EL VALOR SEA 'Venta', UTILICE EL WIDGET CORRESPONDIENTE ************-->
+			  ❓<!--  ************ NECESITAMOS QUE EL CAMPO transaction​_type SEA DE COLOR rojo CUANDO EL VALOR SEA 'Venta', UTILICE EL WIDGET CORRESPONDIENTE ************-->
 			  <field name="transaction​_type" decoration​-‍success="transaction​_type=='Compra'"/>
 			</tree>
 		  </field>
@@ -308,7 +316,7 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 			#add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS, PUT, DELETE';
 			#add_header 'Access-Control-Allow-Headers' 'Origin, Content-Type, Accept, Authorization';
 
-			# ************¿Para que sirven estas lineas?
+			❓# ************¿Para que sirven estas lineas?
 			location ​/403 {
 			  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 			  proxy_set_header X-Real-IP $remote_addr;
@@ -317,7 +325,7 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 			  proxy​_pass http://127.0.0.1:8069/403;
 			}
 
-			# ************¿Para que sirven estas lineas?
+			
 			location ​/404 {
 			  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 			  proxy_set_header X-Real-IP $remote_addr;
@@ -327,13 +335,13 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 			}
 
 
-			# ************ ¿Para que sirven estas lineas?
+			❓# ************ ¿Para que sirven estas lineas?
 			#location ~* /web/database/selector {
 			#    deny ​all;
 			#    return ​403;
 			#}
 
-			# ************ ¿Para que sirven estas lineas?
+			❓# ************ ¿Para que sirven estas lineas?
 			#location ~* /web/data​base/man‍ager {
 			#    deny ​all;
 			#    return ​403;
@@ -361,27 +369,27 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 
 21) Cómo ha sido su experiencia con los modelos y vistas QWEB en el módulo de punto de ventas de odoo?
 
-
+	❓
 
 22) Qué dificultades encuentras al momento de desarrollar vistas para el módulo de punto de ventas?
 
-
+	❓
 
 23) Qué experiencia tienes en el área de Tecnología de Información?
-
+	❓
 
 
 24) Sabes preparar un cable UTP 🔌?
 
-
+	❓
 
 25) Haz manejado protocolos HTTP, HTTPS, FTP, TELNET 🔀?
 
-
+	❓
 
 26) Cómo ha sido tu experiencia con estos protocolos?
 
-
+	❓
 
 27) Haga un pequeño ejemplo de herencia en Odoo. Le facilitamos
     de antemano las importaciones. Complete las partes faltantes
@@ -418,13 +426,13 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 				order.margin = order.amount​_total * order.margin​_percent
 
 28) Qué función cumple @api‌.dep​ends('order​_line') ?
-
+	❓
 
 29) Qué son los Dunder ó Metodos Mágicos en Python. De un ejemplo simple de ello.
-
+	❓
 
 30) Qué significa el uso de models​‌.Model?
-
+	❓
 
 31) Qué sabes respecto a Odoo Community Association 🧪?
     https://github.com/oca
@@ -432,7 +440,7 @@ en Odoo. Más que un examen, 👨‍💻 míralo como un proyecto en el que quer
 
 
 32) Qué es el IDLE de python?
-
+	❓
 
 
 HASTA AQUI, ES TODO.
